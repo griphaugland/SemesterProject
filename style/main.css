@@ -30,17 +30,37 @@ nav {
 nav {
   position: absolute;
   width: 100%;
-  height: 500px;
-  top: 10rem;
+  height: 101vh;
+  top: 6.09rem;
+  background: linear-gradient(
+    188.82deg,
+    #ffffff 40.38%,
+    rgba(255, 255, 255, 0) 176.9%
+  );
 }
 nav a {
   display: flex;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   align-content: center;
   justify-content: center;
   text-decoration: none;
   color: #2d3655;
+  padding: 1rem;
+}
+.menustructure {
+  width: 100%;
+  height: 40vh;
+}
+.menustructure a {
+  margin-top: 20px;
+}
+.closenav {
+  font-size: 2rem;
+  position: absolute;
+  top: 34%;
+  left: 85%;
+  padding: 1rem;
 }
 .menu-icon {
   padding: 10px;
@@ -65,7 +85,7 @@ header {
 }
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-self: flex-end;
   width: 100%;
@@ -77,6 +97,7 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding: 1rem;
   font-size: 0.8rem;
+  gap: 25px;
 }
 .footerhours {
   display: flex;
@@ -95,6 +116,11 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  min-width: 110px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #667bf7;
+  padding-bottom: 1rem;
 }
 .split1 {
   display: flex;
@@ -109,20 +135,19 @@ footer {
   position: absolute;
   float: left;
   z-index: 1;
-  width: 27%;
-  height: 15%;
+  width: 150px;
   top: 35%;
   left: 10%;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: white;
   overflow: hidden;
+  display: inline;
 }
 .pyvbutton {
   position: absolute;
-  float: left;
   z-index: 1;
-  width: 20%;
-  height: 12%;
+  width: 150px;
+  height: 5%;
   top: 60%;
   left: 12%;
   background: linear-gradient(
@@ -135,10 +160,11 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   text-decoration: none;
   font-family: "Oxanium", cursive;
   max-width: 250px;
+  overflow: hidden;
 }
 main {
   width: 100vw;
@@ -149,6 +175,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  border-bottom: 1px solid #667bf7;
+  padding-bottom: 1rem;
 }
 .socialbrands {
   display: flex;
@@ -187,6 +215,32 @@ main {
 .locationlink {
   text-decoration: none;
   color: #667bf7;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 20em;
+  grid-template-rows: auto;
+  min-height: 70vh;
+  justify-content: center;
+  align-content: center;
+}
+.child1 {
+  background-color: lightblue;
+}
+.child2 {
+  background-color: yellow;
+}
+.child3 {
+  background-color: green;
+}
+.child4 {
+  background-color: red;
+}
+.child5 {
+  background-color: orange;
+}
+.child6 {
+  background-color: blue;
 }
 @media (min-width: 950px) {
   .menu-icon {
@@ -249,11 +303,17 @@ main {
     max-width: 800px;
   }
   nav a {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     font-size: 1rem;
     width: 100%;
     height: 100%;
+  }
+  .closenav {
+    display: none;
   }
   .menustructure {
     display: flex;
@@ -272,5 +332,73 @@ main {
   }
   .locationlink {
     display: none;
+  }
+}
+@media (min-width: 582px) {
+  .footercontact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+  }
+  .socialbrands {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .socials {
+    width: 1.8rem;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+    border: none;
+  }
+  .footerhours {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 130px;
+  }
+  .footertop {
+    width: 100%;
+    text-align: center;
+  }
+  .footertext {
+    display: flex;
+  }
+  .hoursplit {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    min-width: 110px;
+    border: none;
+  }
+  .split1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .split2 {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    width: 100%;
+    background: linear-gradient(
+      355.82deg,
+      #ffffff 71.38%,
+      rgba(255, 255, 255, 0) 176.9%
+    );
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 1rem;
+    font-size: 0.8rem;
   }
 }
