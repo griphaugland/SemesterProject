@@ -9,7 +9,7 @@
 }
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 #menu-checkbox {
   display: none;
@@ -33,9 +33,9 @@ nav {
   height: 101vh;
   top: 6.09rem;
   background: linear-gradient(
-    188.82deg,
-    #ffffff 40.38%,
-    rgba(255, 255, 255, 0) 176.9%
+    182.73deg,
+    #ffffff 45.32%,
+    rgba(255, 255, 255, 0) 96.17%
   );
 }
 nav a {
@@ -57,9 +57,6 @@ nav a {
 }
 .closenav {
   font-size: 2rem;
-  position: absolute;
-  top: 34%;
-  left: 85%;
   padding: 1rem;
 }
 .menu-icon {
@@ -132,24 +129,13 @@ footer {
   flex-direction: column;
 }
 .pyvtext {
-  position: absolute;
-  float: left;
-  z-index: 1;
-  width: 150px;
-  top: 35%;
-  left: 10%;
   font-size: 1.3rem;
   color: white;
   overflow: hidden;
   display: inline;
 }
 .pyvbutton {
-  position: absolute;
-  z-index: 1;
-  width: 150px;
-  height: 5%;
-  top: 60%;
-  left: 12%;
+  height: 40px;
   background: linear-gradient(
     180deg,
     #667bf7 29.63%,
@@ -195,22 +181,23 @@ main {
 .locationiframe {
   display: none;
 }
-.headerimage {
+main {
+  background-color: #2d3655;
+}
+.header {
   position: relative;
   width: 100vw;
   height: 80vh;
   object-fit: cover;
   object-position: top;
+  background-size: cover;
+  background-image: url(/media/childvr.webp);
+  background-position: center;
+  background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  text-decoration: none;
-}
-main {
-  background-color: #2d3655;
-}
-.header {
-  width: auto;
-  height: auto;
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .locationlink {
   text-decoration: none;
@@ -218,78 +205,180 @@ main {
 }
 .gridcontainer {
   display: grid;
-  grid-template-columns: 20em;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   grid-template-rows: auto;
-  min-height: 70vh;
-  justify-content: center;
-  align-content: center;
+  width: 100%;
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .child1 {
-  background-color: lightblue;
+  background-color: #2d3655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 575px;
 }
 .child2 {
-  background-color: yellow;
+  background-image: url(/media/astrophysics.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 575px;
 }
 .child3 {
-  background-color: green;
+  background-image: url(/media/children-playing.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 575px;
 }
 .child4 {
-  background-color: red;
+  background-color: #2d3655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 575px;
 }
 .child5 {
-  background-color: orange;
+  background-color: #2d3655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 575px;
 }
 .child6 {
   background-color: blue;
+  min-height: 575px;
+}
+.newsheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2d3655;
+  font-size: 2rem;
+  font-weight: 250;
+  width: 90%;
+  background-color: white;
+  height: 2rem;
+  margin-bottom: 10px;
+  padding: 25px;
+}
+.newsbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px;
+  border-left: 1px solid #667bf7;
+  width: 90%;
+}
+.newstexth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-weight: 200;
+}
+.newstext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  color: rgb(224, 222, 222);
+  font-weight: 200;
+}
+.mainhourstop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 200;
+  width: 90%;
+  background-color: white;
+  height: 2rem;
+  margin-bottom: 2rem;
+  padding: 25px;
+}
+.mainhours {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainhoursplit {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  min-width: 110px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  font-weight: 100;
+  font-size: 2rem;
+  color: white;
+}
+.supporttxt {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+  gap: 2rem;
+}
+.stxt {
+  font-size: 2rem;
+  color: white;
+  font-weight: 200;
+}
+.sbtn  {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+.txtnbtn {
+  z-index: 1;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 0px;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+.header a {
+  text-decoration: none;
 }
 @media (min-width: 950px) {
   .menu-icon {
     display: none;
   }
-  .headerimage {
-    position: relative;
-    width: 100vw;
-    max-height: 80vh;
-    object-fit: cover;
-    object-position: top;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    text-decoration: none;
-  }
   .pyvtext {
-    position: absolute;
-    float: left;
-    z-index: 1;
-    width: 27%;
-    height: 17%;
-    top: 35%;
-    left: 10%;
     font-size: 1.8rem;
     color: white;
-    overflow: hidden;
     min-width: 400px;
   }
   .pyvbutton {
-    position: absolute;
-    float: left;
-    z-index: 1;
-    width: 20%;
-    height: 12%;
-    top: 54%;
-    left: 12.6%;
+    height: 60px;
     background: linear-gradient(
       180deg,
       #667bf7 29.63%,
       rgba(102, 123, 247, 0) 125.31%
     );
     border-radius: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
     font-family: "Oxanium", cursive;
-    max-width: 250px;
+    width: 250px;
+    text-decoration: none;
   }
   nav {
     display: flex;
@@ -332,6 +421,13 @@ main {
   }
   .locationlink {
     display: none;
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    width: 100%;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
   }
 }
 @media (min-width: 582px) {
@@ -400,5 +496,51 @@ main {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 1rem;
     font-size: 0.8rem;
+  }
+  .txtnbtn {
+    z-index: 1;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    object-position: top;
+    background-size: cover;
+    background-image: url(/media/childvr.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .pyvtext {
+    font-size: 1.8rem;
+    color: white;
+    min-width: 400px;
+  }
+  .pyvbutton {
+    height: 60px;
+    background: linear-gradient(
+      180deg,
+      #667bf7 29.63%,
+      rgba(102, 123, 247, 0) 125.31%
+    );
+    border-radius: 40px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Oxanium", cursive;
+    width: 250px;
+    text-decoration: none;
   }
 }
