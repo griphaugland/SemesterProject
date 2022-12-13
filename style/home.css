@@ -74,6 +74,10 @@ nav a {
   width: 80%;
   padding: 1rem;
   max-width: 440px;
+  transition: transform 0.5s;
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 header {
   display: flex;
@@ -412,6 +416,7 @@ main {
   font-size: 1.4rem;
   gap: 2rem;
   display: none;
+  transition: transform 0.8s;
 }
 .scroll1:hover,
 .scroll2:hover,
@@ -427,6 +432,7 @@ main {
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  transform: matrix3d(1);
 }
 .scroll2 {
   grid-row: 4;
