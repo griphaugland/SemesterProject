@@ -129,7 +129,6 @@
 .exhibitsimagediv1 {
   width: 100%;
   height: 100%;
-  border: 2px solid #667bf7;
   background-image: url(/media/lightroom.webp);
   background-size: cover;
   background-position: center;
@@ -137,7 +136,6 @@
 .exhibitsimagediv2 {
   width: 100%;
   height: 100%;
-  border: 2px solid #667bf7;
   background-image: url(/media/mammoth-1257288_1920.webp);
   background-size: cover;
   background-position: center;
@@ -145,7 +143,6 @@
 .exhibitsimagediv3 {
   width: 100%;
   height: 100%;
-  border: 2px solid #667bf7;
   background-image: url(/media/jesse-orrico-60373.webp);
   background-size: cover;
   background-position: center;
@@ -153,7 +150,6 @@
 .exhibitsimagediv4 {
   width: 100%;
   height: 100%;
-  border: 2px solid #667bf7;
   background-image: url(/media/ecology.webp);
   background-size: cover;
   background-position: center;
@@ -161,7 +157,6 @@
 .exhibitsimagediv5 {
   width: 100%;
   height: 100%;
-  border: 2px solid #667bf7;
   background-image: url(/media/Robots.webp);
   background-size: cover;
   background-position: center;
@@ -169,6 +164,7 @@
 .imagefit {
   min-width: 420px;
   height: 300px;
+  border: 2px solid #667bf7;
 }
 @media only screen and (min-width: 582px) and (max-width: 949px) {
   .pyvtext {
@@ -277,8 +273,9 @@
     max-height: 400px;
   }
   .imagefit {
-    min-width: 530px;
+    width: 40%;
     height: 400px;
+    border: 2px solid #667bf7;
   }
   .contentdiv2 {
     display: flex;
@@ -312,6 +309,7 @@
 }
 @media only screen and (max-width: 450px) {
   .imagefit {
+    border: 2px solid #667bf7;
     min-width: 250px;
     height: 250px;
   }

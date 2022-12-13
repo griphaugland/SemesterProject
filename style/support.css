@@ -1,0 +1,21 @@
+.supportimagediv1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(/media/support.webp);
+  background-size: cover;
+  background-position: center;
+}
+.supportimagediv2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(/media/volunteer2.webp);
+  background-size: cover;
+  background-position: center;
+}
+.supportimagediv3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(/media/intern.webp);
+  background-size: cover;
+  background-position: center;
+}
