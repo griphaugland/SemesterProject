@@ -54,8 +54,7 @@
 }
 .imagediv1 {
   width: 100%;
-  max-width: 532px;
-  min-height: 400px;
+  height: 100%;
   border: 2px solid #667bf7;
   background-image: url(/media/locationimage.webp);
   background-size: cover;
@@ -63,8 +62,7 @@
 }
 .imagediv2 {
   width: 100%;
-  max-width: 532px;
-  min-height: 400px;
+  height: 100%;
   border: 2px solid #667bf7;
   background-image: url(/media/parkingimg.webp);
   background-size: cover;
@@ -72,8 +70,7 @@
 }
 .imagediv3 {
   width: 100%;
-  max-width: 532px;
-  min-height: 400px;
+  height: 100%;
   border: 2px solid #667bf7;
   background-image: url(/media/robot.webp);
   background-size: cover;
@@ -81,8 +78,7 @@
 }
 .imagediv4 {
   width: 100%;
-  max-width: 532px;
-  min-height: 400px;
+  height: 100%;
   border: 2px solid #667bf7;
   background-image: url(/media/souvenir.webp);
   background-size: cover;
@@ -149,32 +145,32 @@
     font-weight: 300;
   }
   .imagediv1 {
-    min-width: 532px;
-    min-height: 400px;
+    width: 100%;
+    height: 100%;
     border: 2px solid #667bf7;
     background-image: url(/media/locationimage.webp);
     background-size: cover;
     background-position: center;
   }
   .imagediv2 {
-    min-width: 532px;
-    min-height: 400px;
+    width: 100%;
+    height: 100%;
     border: 2px solid #667bf7;
     background-image: url(/media/parkingimg.webp);
     background-size: cover;
     background-position: center;
   }
   .imagediv3 {
-    min-width: 532px;
-    min-height: 400px;
+    width: 100%;
+    height: 100%;
     border: 2px solid #667bf7;
     background-image: url(/media/robot.webp);
     background-size: cover;
     background-position: center;
   }
   .imagediv4 {
-    min-width: 532px;
-    min-height: 400px;
+    width: 100%;
+    height: 100%;
     border: 2px solid #667bf7;
     background-image: url(/media/souvenir.webp);
     background-size: cover;
@@ -195,35 +191,34 @@
 }
 @media only screen and (max-width: 350px) {
   .imagediv1 {
-    max-width: 532px;
-    min-height: 200px;
-    border: 2px solid #667bf7;
+    width: 100%;
+    height: 100%;
     background-image: url(/media/locationimage.webp);
     background-size: cover;
     background-position: center;
   }
   .imagediv2 {
-    max-width: 532px;
-    min-height: 200px;
-    border: 2px solid #667bf7;
+    width: 100%;
+    height: 100%;
     background-image: url(/media/parkingimg.webp);
     background-size: cover;
     background-position: center;
   }
   .imagediv3 {
-    max-width: 532px;
-    min-height: 200px;
-    border: 2px solid #667bf7;
+    width: 100%;
+    height: 100%;
     background-image: url(/media/robot.webp);
-    background-size: cover;
+    background-size: fill;
     background-position: center;
   }
   .imagediv4 {
-    max-width: 532px;
-    min-height: 200px;
-    border: 2px solid #667bf7;
+    width: 100%;
+    height: 100%;
     background-image: url(/media/souvenir.webp);
     background-size: cover;
     background-position: center;
+  }
+  .imagefit {
+    border: 2px solid #667bf7;
   }
 }
