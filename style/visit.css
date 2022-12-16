@@ -97,7 +97,6 @@
   width: 90%;
   height: 200px;
   border: 2px solid #667bf7;
-  transition: transform 0.5s;
 }
 .markon {
   border-left: 1px solid #667bf7;
@@ -208,12 +207,6 @@
     transition: transform 0.5s;
     margin-left: 6%;
     margin-top: 50px;
-  }
-  .imagefitvisit:hover {
-    transform: scale(1.1);
-  }
-  .imagefit:active {
-    transform: scale(1);
   }
   .returnvisit {
     margin-left: 4rem;
