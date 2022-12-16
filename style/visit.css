@@ -103,37 +103,17 @@
   padding-left: 10px;
 }
 @media only screen and (min-width: 950px) {
-  .markbtn {
-    padding-left: 10px;
-  }
-  .markon {
-    border-left: 1px solid #667bf7;
-  }
   #visitmain {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    gap: 10rem;
     padding-bottom: 10rem;
-  }
-  .backbar {
-    width: 100%;
-  }
-  .backbutton {
-    margin-left: 5%;
   }
   .backimg {
     width: 60px;
     height: 25px;
   }
   .contentsection {
-    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     max-height: 400px;
     border: 2px solid #667bf7;
     border-radius: 200px;
@@ -142,13 +122,7 @@
     border-top: none;
   }
   .contentdiv {
-    display: flex;
-    flex-direction: column;
-    color: white;
     width: 40%;
-    gap: 2rem;
-    align-items: flex-start;
-    justify-content: flex-start;
     filter: drop-shadow(-100% 0px 4px 100% rgb(255, 255, 255));
     margin-left: 5%;
   }
@@ -163,34 +137,6 @@
     font-size: clamp(12px, 1vw, 20px);
     font-weight: 300;
   }
-  .imagediv1 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/locationimage.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .imagediv2 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/parkingimg.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .imagediv3 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/robot.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .imagediv4 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/souvenir.webp);
-    background-size: cover;
-    background-position: center;
-  }
   .locationimage {
     width: 100%;
     height: 10%;
@@ -203,7 +149,6 @@
   .imagefitvisit {
     min-width: 45%;
     height: 350px;
-    border: 2px solid #667bf7;
     transition: transform 0.5s;
     margin-left: 6%;
     margin-top: 50px;
@@ -214,35 +159,5 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .imagediv1 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/locationimage.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .imagediv2 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/parkingimg.webp);
-    background-size: cover;
-    background-position: center;
-  }
-  .imagediv3 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/robot.webp);
-    background-size: fill;
-    background-position: center;
-  }
-  .imagediv4 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/media/souvenir.webp);
-    background-size: cover;
-    background-position: center;
   }
 }
