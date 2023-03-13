@@ -861,6 +861,9 @@ main {
   .gridcontainer {
     min-width: 100%;
   }
+  .scroll1 {
+    display: none;
+  }
 }
 @keyframes pulse {
   0% {
