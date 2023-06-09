@@ -16,10 +16,10 @@ The project was built with
 - CSS
 
 ## Use code
-If you want to use to code you are welcome to clone the repo and play around with the project! :)
+If you want to use the code you are welcome to clone the repo and play around with the project! :)
 
 ## Contact
-If you want to get in touch, I can be reached through email: griphaugland@gmail.com I can also be reached by dm on LinkedIn: https://www.linkedin.com/in/eirik-grip-haugland-a15778bb/
+If you want to get in touch, I can be reached through email: griphaugland@gmail.com. I can also be reached by dm on LinkedIn: https://www.linkedin.com/in/eirik-grip-haugland-a15778bb/
 
 ## Acknowledgements
 I´d like to acknowledge my family and some of my fellow students at Noroff for helping me with deciding some of the design.
